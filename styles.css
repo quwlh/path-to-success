@@ -5,6 +5,8 @@
    License: none (public domain)
 */
 
+
+/* RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,6 +51,14 @@ table {
 	border-spacing: 0;
 }
 
+/* RESET */
+
+
+
+
+
+/* VARIABLES */
+
 :root {
     --teal: #4CA7C0;
     --purple: #484FB7;
@@ -57,8 +67,11 @@ table {
     --pink:#D9526F;
     --dark-gray:#1E1E1E; 
     --white:#ffffff; 
-
 }
+
+/* VARIABLES */
+
+/* BODY AND HTML */
 
 html {
     background-color: var(--lavender)
@@ -66,14 +79,10 @@ html {
 
 body{
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 450px;
     background-color: var(--purple);
     color: var(--white);
     font-family: "Inter", Arial, sans-serif;
-}
-
-a{
-    text-decoration: none;
 }
 
 img{
@@ -82,50 +91,9 @@ img{
     height:auto;
 }
 
-h1{
-    font-family: "Kavoon",serif;
-    font-size: 3em;
-    text-align: center;
-
+a{
+    text-decoration: none;
 }
-
-h2{
-    font-family: "Kavoon", serif;
-    font-size: 2em;
-}
-
-h3{
-
-    font-size: 1.5em;
-    font-weight: 700;
-    color: var(--yellow);
-}
-
-h4{
-    font-size: 1.15em;
-    font-weight: 700;
-    color: var(--purple);
-}
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-nav{
-    background-color: var(--yellow);
-}
-
-nav h2{
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: 700;
-    text-align: center;
-    color: var(--dark-gray);
-}
-
 
 p,
 li,
@@ -135,6 +103,69 @@ th {
 	font-family: "Inter", Arial, sans-serif;
 }
 
+/* BODY AND HTML */
+
+
+/* HEADERS */
+
+h1{
+    font-family: "Kavoon",serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1rem 1rem 0.25rem;
+}
+
+h2{
+    font-family: "Kavoon", serif;
+    font-size: 2em;
+    margin-bottom: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+h4{
+    font-size: 1.15em;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+
+/* HEADERS */
+
+
+/* NAV BAR */
+
+header > p {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 0 1rem 1rem;
+}
+
+
+nav{
+    background-color: var(--yellow);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav h2{
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark-gray);
+    padding: 0.75rem 0 0.5rem;
+}
+
 nav a{
     background: var(--white);
     color: var(--purple);
@@ -142,6 +173,26 @@ nav a{
     text-transform: uppercase;
     font-weight: 800;
 }
+
+nav ul {
+    width: 88%;
+    margin: 0 auto;
+}
+
+nav li{
+    margin-top: 0.75rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 0.5rem;
+}
+
+
+/* NAV BAR */
+
+
+/* SERVICES */
 
 .personal-development,
 .career-coaching,
@@ -155,14 +206,137 @@ nav a{
     padding: 1rem;
     margin-bottom: 0.8rem;
     color: var(--dark-gray);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+
+.personal-development img,
+.career-coaching img,
+.relationship-coaching img,
+.supportive-community img,
+.focused-sessions img,
+.interactive-learning img,
+.flexible-learning img {
+	width: 72px;
+	margin-bottom: 0.75rem;
+}
+
+.personal-development p,
+.career-coaching p,
+.relationship-coaching p,
+.supportive-community p,
+.focused-sessions p,
+.interactive-learning p,
+.flexible-learning p {
+	color: var(--dark-gray);
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+/* SERVICES */
+
+
+
+/* WHY CHOOSE US */
+
 
 .why-choose-us {
     background-color: var(--pink);
 }
 
+.why-choose-us ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.why-choose-us li:first-child {
+	background-color: var(--teal);
+}
+
+.why-choose-us li:nth-child(2) {
+	background-color: var(--lavender);
+}
+
+.why-choose-us li:nth-child(3) {
+	background-color: var(--yellow);
+}
+
+.why-choose-us li:last-child {
+	background-color: var(--white);
+}
+
+
+/* WHY CHOOSE US */
+
+
+/* FIRST STEP */
+
 .first-step{
     background-color: var(--pink);
 }
 
+.first-step p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
 
+.first-step a {
+	display: block;
+	width: 86%;
+	margin: 0 auto;
+	background-color: var(--white);
+	color: var(--dark-gray);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 1rem;
+	border-radius: 0 0 12px 12px;
+	box-shadow: var(--shadow);
+}
+
+/* FIRST STEP */
+
+
+/* PRICING */
+
+.pricing table {
+    width: 58%;
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+.pricing th,
+.pricing td {
+    border: 1px solid var(--yellow);
+    padding: 0.55rem;
+    font-size: 0.82rem;
+}
+
+.pricing th {
+    background-color: var(--yellow);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* PRICING */
+
+
+/* FOOTER */
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.5rem 1rem;
+	font-size: 0.65rem;
+}
+
+footer a {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+/* FOOTER */
