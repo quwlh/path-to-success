@@ -242,12 +242,29 @@ nav a {
 
 .why-choose-us {
     background-color: var(--pink);
+    padding: 1rem;
+}
+
+.why-choose-us h2{
+    margin-left: 0;
 }
 
 .why-choose-us ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
+    color: var(--dark-gray)
+}
+
+.why-choose-us li {
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
 }
 
 .why-choose-us li:first-child {
@@ -274,12 +291,19 @@ nav a {
 
 .first-step{
     background-color: var(--pink);
+    padding: 1rem;
+}
+
+.first-step h2{
+    margin-left: 0rem;
+    margin-bottom: 0.75rem;
 }
 
 .first-step p {
 	font-size: 0.9rem;
 	line-height: 1.5;
 	margin-bottom: 1rem;
+    margin-left: 0rem;
 }
 
 .first-step a {
@@ -293,26 +317,33 @@ nav a {
 	font-weight: 800;
 	padding: 1rem;
 	border-radius: 0 0 12px 12px;
-	box-shadow: var(--shadow);
+    box-shadow: 0 4px 0 var(--dark-gray);
 }
+
 
 /* FIRST STEP */
 
 
+
 /* PRICING */
+
+.pricing h2{
+    margin-top: 1rem;
+}
 
 .pricing table {
     width: 58%;
     margin: 0 auto;
     background-color: var(--white);
     color: var(--dark-gray);
+    margin: 0 auto 1.5rem;
 }
 
 .pricing th,
 .pricing td {
     border: 1px solid var(--yellow);
     padding: 0.55rem;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
 }
 
 .pricing th {
