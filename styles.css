@@ -145,8 +145,9 @@ h4{
 header > p {
     text-align: center;
     font-style: italic;
-    font-size: 0.8rem;
-    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    padding: 0 2rem 2rem;
+    margin-top: .5rem;
 }
 
 
@@ -159,7 +160,6 @@ nav{
 nav h2{
     font-family: "Inter", Arial, sans-serif;
     font-size: 1.5em;
-    font-style: italic;
     font-weight: 700;
     text-align: center;
     color: var(--dark-gray);
